@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: white;
+            background: black;
+            overflow: hidden;
+        }
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: blur(5px);
+        }
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 3rem;
+            text-shadow: 0 0 10px #7f00ff, 0 0 20px #7f00ff, 0 0 30px #007bff;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #7f00ff; }
+            100% { text-shadow: 0 0 20px #7f00ff, 0 0 40px #007bff; }
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #7f00ff;
+            margin: 20px 0;
+        }
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            font-size: 32px;
+            font-weight: bold;
+            color: #7f00ff;
+            text-decoration: none;
+            margin: 10px;
+            transition: transform 0.3s, text-shadow 0.3s;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+            text-shadow: 0 0 15px #7f00ff;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="background-video">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1>Welcome to My Personal Space</h1>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@MS4wLjABAAAAjgqiXktzxyv8u-vBfVMnpQWi8EnNSXb4gYqIhbNU-fr8uJwE8b4Ho32pNzQIlL8E?_t=ZS-8u5BCrvup2P&_r=1" target="_blank">TikTok</a>
+            <a href="https://www.instagram.com/i.7xj1?igsh=aW4zZjZnN2VrdXI5&utm_source=qr" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/@MoDDnE" target="_blank">YouTube</a>
+            <a href="https://discord.com" target="_blank">Discord 904r</a>
+            <a href="https://steamcommunity.com/profiles/76561199549142929/" target="_blank">Steam</a>
+        </div>
+    </div>
+</body>
+</html>
